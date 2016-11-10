@@ -1,0 +1,169 @@
+@charset:"UTF-8";
+.shop-det-info{
+	font-size: 0.14rem;
+}
+.food-lists-box .food-devide{
+	width: 100%;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	background: #fff;
+	display: flex;
+	display: -webkit-flex;
+	border-bottom:1px solid #d6d4d4;
+}
+.discount,.classify{
+	position: relative;
+	flex: 1;
+	-webkit-flex:1;
+	font-size: 0.16rem;
+	text-align: center;
+}
+.discount .line{
+	position: absolute;
+	right: -1px;
+	top: 0.07rem;
+	display: block;
+	width: 1px;
+	height: 0.27rem;
+	background: #d6d4d4;
+}
+
+/*菜品列表*/ 
+.food-lists{
+	width: 100%;
+	background: #fcfafa;
+}
+.food-lists .food-kind{
+	width: 100%;
+	height: 0.6rem;
+	padding: 0 3.75%; 
+	line-height: 0.6rem;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #d6d4d4;
+	box-sizing: border-box;
+}
+.food-name,
+.amount{
+	display: flex;
+	font-size: 0.16rem;
+	text-align:center;
+	flex: 1;
+	-webkit-flex: 1;
+}
+.amount{
+	color: #f40;
+	font-size: 0.13rem;
+}
+.amount .money{
+	position: relative;
+	
+	flex: 2;
+	-webkit-flex: 2;
+}
+.money .s{
+	position: absolute;
+	left: -0.04rem;
+}
+.amount .add-cut{
+	display: flex;
+	display: -webkit-flex;
+	flex: 4;
+	-webkit-flex: 4;
+}
+.amount .add-cut div{
+	flex: 1;
+}
+.add-cut div a{
+	display: block;
+	width: 0.28rem;
+	height: 0.28rem;
+	margin: 0.15rem auto 0;
+	line-height: 0.26rem;
+	text-align: center;
+	border-radius: 50%;
+	font-size: 0.16rem;
+	color: #f40;
+	border:1px solid #dcdcdc;
+	box-sizing: border-box;
+}
+.amount .add-cut div:last-child{
+	position: relative;
+}
+.amount .add-cut div:last-child a{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -0.14rem;
+	margin-left: -0.14rem;
+}
+.amount .add-cut div:last-child a:last-child{
+	background: #f40;
+	border:none;
+	color: #fff;
+}
+/*结算footer*/
+footer{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 0.5rem;
+	font-size: 0.16rem;
+	background: #f4f4f3;
+}
+.f-wrapper{
+	display: flex;
+	display: -webkit-flex;
+	width: 92.5%;
+	height: 0.5rem;
+	margin: 0 auto;
+	line-height: 0.5rem;
+	justify-content: space-between;
+}
+.f-wrapper div{
+	flex: 1;
+}
+.f-wrapper .cal-total a{
+	display: inline-block;
+	width: 0.28rem;
+	height: 0.28rem;
+	margin-right: 0.13rem;
+	line-height: 0.28rem;
+	text-align: center;
+	border-radius: 50%;
+	background: #f40;
+	color: #fff;
+}
+.f-wrapper .cal-total>span{
+	color: #f40;
+	font-size: 0.16rem;
+}
+.ways {
+	display: flex;
+	display: -webkit-flex;
+
+}
+.ways div{
+	flex: 1;
+}
+.way-get a{
+	display: block;
+	width: 0.7rem;
+	height: 0.26rem;
+	margin: 0.11rem auto 0;
+	color:#fff;
+	line-height: 0.26rem;
+	background: #79a905;
+	text-align: center;
+}
+
+.amount .add-cut div a.display,
+.amount .add-cut div a.display,
+.amount .add-cut div a.display{
+	display:none;
+}
+.display{
+	display:none;
+}

@@ -1,0 +1,26 @@
+/*
+	360
+	2016-1-14
+*/
+html{font-size: 625%;}
+body{font-size: .14rem;background-color: #eaeaea;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {margin:0;padding:0;-webkit-font-smoothing: antialiased; }
+table {border-collapse:collapse;border-spacing:0;}
+fieldset,img {border:0}
+address,caption,cite,code,dfn,em,strong,th,var {font-style:normal;font-weight:normal}
+ol,ul {list-style:none}
+caption,th {text-align:left}
+h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:normal}
+q:before,q:after {content:''}
+abbr,acronym { border:0}
+body, input, select, button, textarea, a{font-family: "微软雅黑",  sans-serif, Tahoma, Geneva; }
+a{text-decoration:none;color: #333;}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden};
+
+
+.ellipsis{display:inline-block;white-space:nowrap;word-wrap:normal;width:100%;overflow:hidden;-ms-text-overflow:ellipsis;-o-text-overflow:ellipsis;-webkit-text-overflow:ellipsis;text-overflow:ellipsis}
+.cc{width: 96%; margin: 0 auto;}
+.headerBug{width: 100%;height: .45rem;background:;}
+.footerBug{width: 100%;height: .6rem;background:;}
+
+                    

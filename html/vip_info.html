@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<title>微叮订</title>
+	<link rel="stylesheet" type="text/css" href="../css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../css/vip_info.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="fix">
+				<div>
+					<a href="#">
+						<i class="iconfont">&#xe600;</i>
+					</a>
+				</div>
+				<div>会员资料填写</div>
+				<div>
+					<a href="#">
+					</a>
+				</div>
+			</div>
+		</header>
+		<section class="header-bug">
+			<div class="row">
+				<label for="username">
+					<i class="iconfont">&#xe610;</i>
+					<span>联系人：</span>
+					<input type="text" name="username" id="username"/>
+				</label>
+			</div>
+			<div class="row">
+				<label for="phonenumber">
+					<i class="iconfont">&#xe618;</i>
+					<span>电话：</span>
+					<input type="text" name="phone" id="phonenumber"/>
+				</label>
+			</div>
+		<!-- 	<div class="row">
+				<label for="phonenumber">
+					<i class="iconfont">&#xe619;</i>
+					<span>区域：</span>
+					<select>
+						<option>水仔路</option>
+					</select>
+					<select>
+						<option>金光大道</option>
+					</select>
+				</label>
+			</div> -->
+			<div class="row">
+				<label for="address" class="address">
+					<i class="iconfont">&#xe615;</i>
+					<span>地址：</span>
+					<input type="text" name="address" id="address"/>
+					<a href="javascript:;" class="history">历史</a>
+				</label>
+			</div>
+			<div class="row">
+				<label for="remarks">
+					<i class="iconfont">&#xe61d;</i>
+					<span>备注：</span>
+					<input type="text" name="remarks" id="remarks"/>
+				</label>
+			</div>
+		</section>
+		<footer>
+			<div class="f-wrapper">
+				<div class="cal-total">
+					<a href="javascript:;">
+						<span>0</span>
+					</a>
+					<span>$</span>
+					<span class="pay-total">100.0</span>
+					<span>元</span>
+				</div>
+				<div class="ways">
+					<div class="way-send">
+						<span class="remind">差50元起送</span>
+						<a href="order_info_send.html" class="w-btn send">起送</a>
+					</div>
+					<div class="way-get">
+						<a href="order_info_get.html" class="w-btn get">自取</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<section class="s-mask">
+			<div class="tc-history-address">
+				<p class="title">
+					<span>历史地址记录</span>
+					<i class="iconfont cancel">&#xe602;</i>
+				</p>
+				<div class="add-lists">
+					<ul>
+						<li class="add-list">
+							<span>某某大道23号6楼5区</span>
+							<i></i>
+						</li>
+						<li class="add-list">
+							<span>某某大道23号6楼5区</span>
+							<i></i>
+						</li>
+						<li class="add-list">
+							<span>某某大道23号6楼5区</span>
+							<i></i>
+						</li>
+						<li class="add-list">
+							<span>某某大道23号6楼5区</span>
+							<i></i>
+						</li>
+						<li class="add-list">
+							<span>某某大道23号6楼5区</span>
+							<i></i>
+						</li>
+						<li class="add-list">
+							<span>某某大道23号6楼5区</span>
+							<i></i>
+						</li>
+					</ul>
+				</div>
+				<div class="tc-footer">
+					<input type="button" value="确认">
+				</div>
+			</div>
+			<div class="tc-remind">
+				<p class="title">
+					<span>温馨提示</span>
+					<i class="iconfont">&#xe602;</i>
+				</p>
+				<div class="tc-test">
+					<p>由于阁下为首次落单，系统已向阁下 发送认证短信，请输信认证号码</p>
+					<form>
+						<input type="text" name="test-code">
+						<input type="button" value='发送'>
+						<input type="button" value='确 认' class="">
+					</form>
+				</div>
+			</div>
+		</section>
+	</div>
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/weidingding.js"></script>
+</body>
+</html>

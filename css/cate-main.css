@@ -1,0 +1,214 @@
+@charset="utf-8";
+
+/*body*/
+.find{
+	width: 100%;
+	height: 0.3rem;
+	background: #fff;
+	line-height: 0.3rem;
+	text-align: center;
+	border-bottom: 1px solid #cdcdcd;
+}
+.find .sum{	color: #f40;}
+
+
+/*content*/
+.content li{
+	width: 100%;
+	height: 1rem;
+	padding: 0.1rem 0;
+	background: #fcfafa;
+	border-bottom: 1px solid #cdcdcd;
+	box-sizing: border-box;
+}
+.food{
+	display:block;
+	height:100%;
+	margin:0 0.15rem;
+}
+.pic{
+	width: 0.8rem;
+	height: 0.8rem;
+}
+.food .info{
+	display:inline-block;
+	width: 65%;
+	margin-left: 0.1rem;
+}
+.food .info h3{ 
+	color:#3e3e3e;
+	font-size: 0.17rem 
+}
+.food .info h3 span{
+	display:inline-block;
+	width:0.17rem;
+	height:0.17rem;
+	margin-left:0.05rem;
+	font-size:0.12rem;
+	font-weight: normal;
+	text-align:center;
+	line-height:0.17rem;
+	border-radius: 50%;
+	color:#fff;
+}
+.food .info p{
+	margin-top: 0.07rem;
+	font-size: 0.12rem;
+	color:#979494;
+}
+.food .info p:last-of-type{color:#f40;}
+/*from user.css*/ 
+.myinfo{
+	position: relative;
+	width: 100%;
+	height: 1.35rem;
+	background: url(../img/1.jpg) no-repeat;
+}
+.myinfo img{
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 0.17rem;
+	width: 0.92rem;
+	height: 0.92rem;
+	margin-top: -0.46rem;
+	border-radius: 50%;
+	border: 0.02rem solid #f40;
+	box-sizing: border-box;
+}
+.myinfo .weixin{
+	position: absolute;
+	top: 50%;
+	left: 1.26rem;
+	width: 1.45rem;
+	height: 0.45rem;
+	margin-top: -0.22rem;
+	color: #fff;
+}
+.myinfo .weixin p:first-child{
+	position: absolute;
+	top: 0;
+}
+.myinfo .weixin p:last-child{
+	position: absolute;
+	bottom: 0;
+}
+.row{
+	padding: 0 3.75%;
+	width:100%;
+	height:0.55rem;
+	line-height: 0.55rem;
+	border-bottom: 1px solid #d6d4d4;
+	box-sizing: border-box;
+	background: #fcfafb;
+	font-size: 0.16rem;
+}
+i.iconfont{
+	font-size: 0.2rem;
+}
+.row span{
+	display: inline-block;
+	margin-left: 0.1rem;
+}
+.row .arrow {
+	display: flex;
+	display: -webkit-flex;
+	width: 0.4rem;
+	float: right;
+	justify-content: flex-end;
+}
+.row:last-child{
+	margin-top: 0.1rem;
+}
+
+
+
+/*footer*/ 
+footer{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: #f4f4f3;
+}
+nav{
+	display: flex;
+	height: .6rem;
+	padding: .05rem 0 .05rem;
+	border-top:1px solid #cdcdcd;
+	box-sizing: border-box;
+}
+nav .item{
+	display: inline-block;
+	flex: 1;
+	text-align: center;
+	color: #999;
+	font-size: .12rem;
+}
+nav .item p{margin-top: .04rem;}
+nav .item i{ font-size: .28rem;}
+nav .selected{ color: #f40; }
+
+/*加载蒙版*/ 
+.loading{
+	position: relative;
+	width: 1.5rem;
+	height: 1rem;
+	margin: 0 auto;
+	margin-top:  1.85rem;
+	border-radius: .05rem;
+	background: rgba(0,0,0,.7);
+}
+.loading .cssaction{
+	position: absolute;
+	left: 0.4rem;
+	bottom: 0.2rem;
+	width: 0.7rem;
+	height: 0.1rem;
+
+}
+.loading .cssaction div{
+	float: left;
+	margin-right: 0.1rem;
+	width: 0.1rem;
+	height: 0.1rem;
+	border-radius: 50%;
+	background: rgba(255,255,255,.3);
+	box-sizing: border-box;
+	transition: all .5s;
+}
+.loading .cssaction div:last-child{
+	margin-right: 0;
+}
+.loading .cssaction div:first-child{
+	animation: action1 2s infinite ease;
+
+}
+.loading .cssaction div:nth-child(2){
+	animation: action2 2s infinite ease;
+	animation-delay:.5s;
+}
+.loading .cssaction div:nth-child(3){
+	animation: action3 2s infinite ease;
+	animation-delay:1s;
+}
+.loading .cssaction div:last-child{
+	animation: action4 2s infinite ease;
+	animation-delay:1.5s;
+}
+@keyframes action1{
+	0%{background: rgba(255,255,255,1)}
+	100%{background: rgba(255,255,255,.3)}
+}
+@keyframes action2{
+	0%{background: rgba(255,255,255,1)}
+	100%{background: rgba(255,255,255,.3)}
+}
+@keyframes action3{
+	0%{background: rgba(255,255,255,1)}
+	100%{background: rgba(255,255,255,.3)}
+}
+@keyframes action4{
+	0%{background: rgba(255,255,255,1)}
+	100%{background: rgba(255,255,255,.3)}
+}

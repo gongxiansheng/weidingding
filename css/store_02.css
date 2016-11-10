@@ -1,0 +1,318 @@
+@charset:"UTF-8";
+a{
+	color: #474747;
+}
+
+.food-lists-box .food-devide{
+	position: relative;
+	width: 100%;
+	z-index: 999;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	background: #fff;
+	display: flex;
+	display: -webkit-flex;
+	border-bottom:1px solid #d6d4d4;
+	box-sizing: border-box;
+}
+.discount,
+.classify{
+	flex: 1;
+	-webkit-flex:1;
+	font-size: 0.16rem;
+	text-align: center;
+	height: 0.25rem;
+	line-height: 0.25rem;
+	margin: 0.07rem 0;
+	box-sizing: border-box;
+}
+.discount {
+	border-right: 1px solid #d6d4d4;
+}
+.btn {
+	color:#f40;
+}
+.btn i{
+	display:inline-block;
+	transition: all .5s;
+	-webkit-transition: all .5s;
+	transform:rotate(180deg);
+	-webkit-transform:rotate(180deg);
+}
+.ro{
+	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+}
+/*子菜单*/
+.sub-menu{
+	display:none;
+	position: absolute;
+	right: 0;
+	top: 0.4rem;
+	z-index: 6;
+	width: 100%;
+	height: 2.8rem;
+	background: #fff;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+
+.sub-menu .sub-discount,
+.sub-menu .sub-classify{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	list-style: none;
+	
+}
+.sub-menu .sub-discount li,
+.sub-menu .sub-classify li{
+	width: 100%;
+	height: 0.4rem;
+	padding-left: 4%;
+	line-height: 0.4rem;
+	border-bottom: 1px solid #d6d4d4;
+	box-sizing: border-box;
+}
+.sub-menu .sub-discount span{
+	display:inline-block;
+	width:0.17rem;
+	height:0.17rem;
+	margin-right:0.1rem;
+	font-size:0.12rem;
+	font-weight: normal;
+	text-align:center;
+	line-height:0.17rem;
+	border-radius: 50%;
+	color:#fff;
+}
+/*.sub-menu .sub-discount li a,
+.sub-menu .sub-classify li a{
+	font-size: 
+}*/
+/*菜品列表*/ 
+.food-lists{
+	width: 100%;
+	background: #fcfafa;
+}
+.food-lists .food-kind{
+	width: 100%;
+	height: 0.6rem;
+	padding: 0 3.75%; 
+	line-height: 0.6rem;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #d6d4d4;
+	box-sizing: border-box;
+}
+.food-name,
+.amount{
+	display: flex;
+	font-size: 0.16rem;
+	text-align:center;
+	flex: 1;
+	-webkit-flex: 1;
+}
+.amount{
+	color: #f40;
+	font-size: 0.13rem;
+}
+.amount .money{
+	position: relative;
+	
+	flex: 2;
+	-webkit-flex: 2;
+}
+.money .s{
+	position: absolute;
+	left: -0.04rem;
+}
+.amount .add-cut{
+	display: flex;
+	display: -webkit-flex;
+	flex: 4;
+	-webkit-flex: 4;
+}
+.amount .add-cut div{
+	flex: 1;
+}
+.add-cut div a{
+	display: inline-block;
+	width: 0.28rem;
+	height: 0.28rem;
+	margin: 0.15rem auto 0;
+	line-height: 0.28rem;
+	text-align: center;
+	border-radius: 50%;
+	font-size: 0.16rem;
+	color: #f40;
+	border:1px solid #dcdcdc;
+	box-sizing: border-box;
+}
+.amount .add-cut div:last-child{
+	position: relative;
+}
+.amount .add-cut div:last-child a{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -0.14rem;
+	margin-left: -0.14rem;
+}
+.amount .add-cut div:last-child a:last-child{
+	background: #f40;
+	border:none;
+	color: #fff;
+}
+.add-cut div .s-count,.add-cut div .s-cut{display:none}
+.s-count span{
+	display: block;
+	margin: 1px 1px 0 0;
+}
+.s-add i{
+	line-height:0.26rem;
+}
+/*结算footer*/
+footer{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 0.5rem;
+	font-size: 0.16rem;
+	background: #f4f4f3;
+}
+.f-wrapper{
+	display: flex;
+	display: -webkit-flex;
+	width: 92.5%;
+	height: 0.5rem;
+	margin: 0 auto;
+	line-height: 0.5rem;
+	justify-content: space-between;
+}
+.f-wrapper div{
+	flex: 1;
+}
+.f-wrapper .cal-total a{
+	display: inline-block;
+	width: 0.28rem;
+	height: 0.28rem;
+	margin-right: 0.13rem;
+	line-height: 0.28rem;
+	text-align: center;
+	border-radius: 50%;
+	background: #f40;
+	color: #fff;
+}
+.f-wrapper .cal-total>span{
+	color: #f40;
+	font-size: 0.18rem;
+}
+.f-wrapper .cal-total>span.pay-total{
+	display:inline-block;
+	text-align:center;
+}
+.ways {
+	display: flex;
+	display: -webkit-flex;
+}
+.ways div{
+	flex: 1;
+}
+.ways .way-send{
+	position:relative;
+	top:0;
+	left:0;
+}
+.ways .way-send .remind{
+	position:absolute;
+	
+}
+.ways .way-send .send{
+	display:none;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top:-0.13rem;
+	margin-left:-0.35rem;
+	background: #f40;
+}
+.w-btn{
+	display: block;
+	width: 0.7rem;
+	height: 0.26rem;
+	color:#fff;
+	line-height: 0.26rem;
+	text-align: center;
+	border-radius: 0.02rem;
+}
+.way-get .get{
+	margin: 0.11rem auto 0;
+	background: #79a905;
+}
+
+.amount .add-cut div a.display,
+.amount .add-cut div a.display,
+.amount .add-cut div a.display{
+	display:none;
+}
+/*弹窗food*/ 
+.tc-food{
+	display: none;
+	position: absolute;
+	top: 1.46rem;
+	left: 50%;
+	z-index: 9999;
+	width: 2.64rem;
+	height: 2.57rem;
+	margin-left: -1.32rem; 
+	border-radius: 0.05rem;
+	background: #fff;
+}
+.tc-food .title{
+	width: 100%;
+	height: 0.38rem;
+	line-height: 0.38rem;
+	padding-left: 0.13rem;
+	color: #fff;
+	box-sizing: border-box;
+	background: #f40;
+	border-top-left-radius: 0.05rem;
+	border-top-right-radius: 0.05rem;
+}
+.tc-food .title i.iconfont{
+	display: inline-block;
+	float: right;
+	text-align: center;
+	width: 0.38rem;
+	height: 0.38rem;
+}
+.tc-food .tc-pic{
+	width: 100%;
+	margin: 0.2rem 0 0.14rem 0;
+	height: 1.35rem;
+	text-align: center;
+}
+.tc-food .tc-pic img{
+	width: 2.24rem;
+	height: 1.35rem;
+	border-radius: 0.05rem;
+}
+.tc-food .tc-money{
+	width: 100%;
+	height: 0.32rem;
+}
+.tc-food .tc-money span{
+	display: block;
+	width: 0.6rem;
+	height: 0.32rem;
+	margin: 0 auto;
+	line-height: 0.32rem;
+	border: 1px solid #f40;
+	text-align: center;
+	color: #f40;
+	border-radius: 0.3rem/0.16rem;
+}

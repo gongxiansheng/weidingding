@@ -1,0 +1,254 @@
+@charset:"UTF-8";
+.row{
+	padding: 0 3.75%;
+	width:100%;
+	height:0.55rem;
+	line-height: 0.55rem;
+	border-bottom: 1px solid #d6d4d4;
+	box-sizing: border-box;
+	background: #fcfafb;
+	font-size: 0.16rem;
+}
+i.iconfont{
+	font-size: 0.2rem;
+}
+.row span{
+	display: inline-block;
+	margin-left: 0.1rem;
+}
+.row input{
+	width: 1.8rem;
+	height: 0.45rem;
+	line-height: 0.45rem;
+	background: #fcfafb;
+	border: none;
+	outline: none;
+}
+.row .address a{
+	float:right;
+	width:0.6rem;
+	height:0.2rem;
+	color: #c6c4c4;
+	margin-top: 0.2rem;
+	line-height: 0.2rem;
+	font-size: 0.12rem;
+	text-align:center;
+	border: 1px solid #aaa9a9;
+	border-radius: 0.02rem;
+}
+/*footer*/ 
+footer{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 0.5rem;
+	font-size: 0.16rem;
+	background: #f4f4f3;
+}
+.f-wrapper{
+	display: flex;
+	display: -webkit-flex;
+	width: 92.5%;
+	height: 0.5rem;
+	margin: 0 auto;
+	line-height: 0.5rem;
+	justify-content: space-between;
+}
+.f-wrapper div{
+	flex: 1;
+}
+.f-wrapper .cal-total a{
+	display: inline-block;
+	width: 0.28rem;
+	height: 0.28rem;
+	margin-right: 0.13rem;
+	line-height: 0.28rem;
+	text-align: center;
+	border-radius: 50%;
+	background: #f40;
+	color: #fff;
+}
+.f-wrapper .cal-total>span{
+	color: #f40;
+	font-size: 0.18rem;
+}
+.f-wrapper .cal-total>span:first-of-type{
+	font-size:0.23rem;
+}
+.f-wrapper .cal-total>span.pay-total{
+	display:inline-block;
+	margin-right: 0.05rem;
+	text-align:center;
+}
+.ways {
+	display: flex;
+	display: -webkit-flex;
+
+}
+.ways div{
+	flex: 1;
+}
+.ways .way-send{
+	position:relative;
+	top:0;
+	left:0;
+}
+.ways .way-send .remind{
+	position:absolute;
+	display:none;
+}
+.ways .way-send .send{
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top:-0.13rem;
+	margin-left:-0.35rem;
+	background: #f40;
+
+
+}
+.w-btn{
+	display: block;
+	width: 0.7rem;
+	height: 0.26rem;
+	color:#fff;
+	line-height: 0.26rem;
+	text-align: center;
+	border-radius: 0.02rem;
+}
+.way-get .get{
+	margin: 0.11rem auto 0;
+	background: #79a905;
+}
+/*address*/ 
+.s-mask .tc-history-address{
+	position: absolute;
+	top: 1.46rem;
+	left: 50%;
+	width: 2.8rem;
+	height: 2.8rem;
+	margin-left: -1.4rem;
+	background: #fff;
+	font-size: 0.15rem;
+	border-radius: 0.05rem;
+}
+.tc-history-address .add-lists{
+	width: 100%;
+	height: 2rem;
+	background: #fcfafa;
+	overflow-y: auto;
+}
+.tc-history-address .add-lists .add-list{
+	width: 100%;
+	height: 0.4rem;
+	padding: 0 0.2rem;
+	line-height: 0.4rem;
+	border-bottom: 1px solid #d6d4d4;
+	box-sizing: border-box;
+}
+.tc-history-address .add-lists .add-list i{
+	float: right;
+	width: 0.12rem;
+	height: 0.12rem;
+	border: 1px solid #d6d4d4;
+	background: #fcfafa;
+	margin-top: 0.13rem;
+	border-radius: 50%;
+}
+.tc-history-address .add-lists .add-list i.click{
+	border-color:#f40; 
+	background: #f40;
+}
+.tc-history-address .tc-footer{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 0.45rem;
+	border-top:  1px solid #d6d4d4;
+	background: #fff;
+	border-radius: 0.05rem;
+}
+.tc-history-address .tc-footer input{
+	float: right;
+	width: 0.7rem;
+	height: 0.25rem;
+	margin: 0.12rem 0.2rem 0 0;
+	background: #f40;
+	border-radius: 0.02rem;
+	color: #fff;
+	border: none;
+}
+/*remind*/ 
+.tc-remind{
+	display:none;
+	position: absolute;
+	top: 1.46rem;
+	left: 50%;
+	width: 2.82rem;
+	height: 2.52rem;
+	margin-left: -1.41rem; 
+	border-radius: 0.05rem;
+	background: #fff;
+}
+.tc-history-address .title,
+.tc-remind .title{
+	width: 100%;
+	height: 0.38rem;
+	line-height: 0.38rem;
+	padding-left: 0.13rem;
+	color: #fff;
+	box-sizing: border-box;
+	background: #f40;
+	border-top-left-radius: 0.05rem;
+	border-top-right-radius: 0.05rem;
+}
+.tc-history-address .title i.iconfont,
+.tc-remind .title i.iconfont{
+	display: inline-block;
+	float: right;
+	text-align: center;
+	width: 0.38rem;
+	height: 0.38rem;
+}
+.tc-remind .tc-test{
+	width: 100%;
+	height: 2.14rem;
+	padding: 0.25rem;
+	box-sizing: border-box;
+}
+.tc-remind .tc-test p{
+	line-height: 0.28rem;
+	font-size: 0.15rem;
+}
+.tc-remind .tc-test form{
+	margin-top: 0.22rem;
+}
+.tc-remind .tc-test form input{
+	border: 1px solid #747373;
+	box-sizing: border-box;
+	border-radius: 0.02rem;
+	height: 0.25rem;
+	line-height: 0.25rem;
+	color: #474747;
+	background: #fff;
+	font-size: 0.13rem;
+}
+.tc-remind .tc-test form input:first-child{
+	float: left;
+	width: 1.47rem;
+	text-indent: 0.02rem;
+}
+.tc-remind .tc-test form input:nth-child(2){
+	float: right;
+	width: 0.75rem;
+}
+.tc-remind .tc-test form input:last-child{
+	margin-top: 0.25rem;
+	width: 100%;
+	color: #fff;
+	background: #f40;
+	border: none;
+	font-size: 0.15rem;
+}

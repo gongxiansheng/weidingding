@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<title>微叮订</title>
+	<link rel="stylesheet" type="text/css" href="../css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../css/store_info.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="fix">
+				<div>
+					<a href="store_02.html">
+						<i class="iconfont">&#xe600;</i>
+						前去点餐
+					</a>
+				</div>
+				<div>店铺详情</div>
+				<div>
+					<a href="food-search.html" class="shop-det-info">
+						<i class="iconfont">&#xe609;</i>
+					</a>
+				</div>
+			</div>
+		</header>
+		<section class="store-nav header-bug ">
+			<div class="store-pic">
+				<img src="../img/store_01.jpg" alt="店铺图片" class="c-store-pic">
+			</div>
+			<div>
+				<div class="row discount-info">
+					<div>
+						<span class="bg-orange">惠</span>
+						<span class="bg-yellow">送</span>
+						<span class="bg-green">取</span>
+					</div>
+				</div>
+				<div class="row order">
+					<a href="store_02.html" class="boss-recommend">
+						<i class="iconfont">&#xe617;</i>
+						<span>店铺推荐</span>
+					</a>
+					<a href="store_02.html" class="store-menu">
+						<i class="iconfont">&#xe616;</i>
+						<span>店铺菜单</span>
+					</a>
+				</div>
+			</div>
+			<div class="icon">
+				<img src="../img/7.jpg">
+			</div>
+			<div class="store-name">
+				<span>好味道餐厅</span>
+			</div>
+		</section>
+		<section class="store-connect">
+			<div class="row">
+				<i class="iconfont">&#xe618;</i>
+				<span>63722238</span>
+				<a href="javascript:;" class="arrow go-call">
+					<i class="iconfont">&#xe608;</i>
+				</a>
+			</div>
+			<div class="row">
+				<i class="iconfont">&#xe615;</i>
+				<span>奥门菜来沮街濠花江2座K铺</span>
+				<a href="store_address.html" class="arrow">
+					<i class="iconfont">&#xe608;</i>
+				</a>
+			</div>
+			<div class="row">
+				<i class="iconfont">&#xe603;</i>
+				<span>商家建议</span>
+				<a href="recommond.html" class="arrow">
+					<i class="iconfont">&#xe608;</i>
+				</a>
+			</div>
+			<div class="row">
+				<i class="iconfont">&#xe62d;</i>
+				<span class="s-send">$ 20起送</span>
+			</div>
+			<div class="row">
+				<i class="iconfont">&#xe61c;</i>
+				<span>预计45分送达</span>
+			</div>
+			<div class="row">
+				<i class="iconfont">&#xe61e;</i>
+				<span>满300元送50元优惠</span>
+			</div>
+		</section>
+		<section class="share">
+			<div class="row">
+				<i class="iconfont">&#xe62a;</i>
+				<span>加入收藏</span>
+				<a href="javascript:;" class="arrow go-collect">
+					<i class="iconfont">&#xe608;</i>
+				</a>
+			</div>
+			<div class="row">
+				<i class="iconfont">&#xe60e;</i>
+				<span>告诉朋友</span>
+				<a href="tellfriend.html" class="arrow">
+					<i class="iconfont">&#xe608;</i>
+				</a>
+			</div>
+		</section>
+		<section class="s-mask">
+			<div class="s-connect">
+				<div class="c-warn">
+					<p>是否拨打</p>
+					<p>“好味道餐厅”的电话</p>
+				</div>
+				<div class="call-or-not">
+					<a href="javascript:;">拨打</a>
+					<a href="javascript:;" class="cancel">取消</a>
+				</div>
+			</div>
+			<div>
+				<div class="o-warn">
+					<p><i class="iconfont">&#xe62a;</i>您已成功收藏</p>
+					<p>“好味道餐厅”</p>
+				</div>
+			</div>
+		</section>
+	</div>
+	
+	<style type="text/css">
+		.s-mask .s-connect {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 2.82rem;
+			height: 1.46rem;
+			margin-left: -1.41rem;
+			margin-top: -0.73rem;
+			border-radius: 0.05rem;
+			background: #fff;
+		}
+		.s-mask .s-connect .c-warn{
+			width: 100%;
+			height: 0.95rem;
+			text-align: center;
+		}
+		.s-mask .s-connect .c-warn p:first-child,
+		.s-mask .o-warn p:first-child{
+			padding-top: 0.23rem;
+		}
+		.s-mask .o-warn p:first-child i{
+			display: inline-block;
+			margin-right: 0.08rem;
+		}
+		.s-mask .s-connect .c-warn p:last-child,
+		.s-mask .o-warn p:last-child{
+			padding-top: 0.18rem;
+		}
+		.s-mask .o-warn p:last-child{
+			color: #f40;
+		}
+		.s-mask .s-connect .call-or-not{
+			display: flex;
+			display: -webkit-flex;
+			width: 100%;
+			height: 0.5rem;
+			line-height: 0.5rem;
+			background: #fcfafa;
+			text-align: center;
+			border-top: 1px solid #d6d4d4;
+			border-bottom-left-radius: 0.05rem; 
+			border-bottom-right-radius: 0.05rem; 
+		}
+		.s-mask .s-connect .call-or-not a{
+			display: inline-block;
+			flex: 1;
+			-webkit-flex: 1;
+			color: #f40;
+		}
+		.s-mask .s-connect .call-or-not a:first-child{
+			border-right: 1px solid #d6d4d4;
+		}
+		.s-mask .o-warn{
+			position: absolute;
+			top: 50%;
+			left: 50%; 
+			width: 2.82rem;
+			height: 0.99rem;
+			margin-top: -0.5rem;
+			margin-left: -1.41rem;
+			text-align: center;
+			background: #fff;
+			border-radius: 0.05rem;
+		}
+	</style>
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/weidingding.js"></script>
+</body>
+</html>
